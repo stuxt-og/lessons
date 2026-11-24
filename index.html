@@ -3,119 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Портфоліо програміста: Python, C/C++, Rust, Bevy Engine та веброзробка.">
-  <meta name="theme-color" content="#0b1020">
-  <title>STuxt — Programmer & Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="static/lib/reset.css">
-  <link rel="stylesheet" href="static/styles/main.css">
+  <title>T</title>
+  <link rel="stylesheet" href="./static/lib/reset.css">
+  <link rel="stylesheet" href="./static/styles/main.css">
+  <link rel="icon" type="image/x-icon" href="./static/images/favicon.ico">
 </head>
 <body>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
-  <nav class="navbar navbar-expand-lg navbar-dark site-nav">
-    <div class="container">
-      <a class="navbar-brand brand" href="#home"><span class="brand-mark">&lt;/&gt;</span> stuxt<span class="brand-dot">.</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Відкрити меню"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
-          <li class="nav-item"><a class="nav-link" href="#about">Про мене</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Навички</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Проєкти</a></li>
-          <li class="nav-item"><a class="nav-link nav-contact" href="#contact">Зв’язатися <span>↗</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <main>
-    <section class="hero section-space" id="home">
-      <div class="container">
-        <div class="row align-items-center gy-5">
-          <div class="col-lg-7">
-            <div class="availability"><span class="status-dot"></span> Відкритий до цікавих проєктів</div>
-            <p class="eyebrow">HELLO, WORLD! I'M A DEVELOPER</p>
-            <h1>Створюю речі,<br>які <span class="gradient-text">працюють.</span></h1>
-            <p class="hero-copy">Програміст, якому подобається розбиратися в системах, писати ефективний код та створювати власні інструменти й ігрові світи.</p>
-            <div class="d-flex flex-wrap gap-3 hero-actions">
-              <a class="btn btn-primary-custom" href="#projects">Переглянути проєкти <span>↗</span></a>
-              <a class="btn btn-outline-custom" href="#about">Більше про мене</a>
-            </div>
-            <div class="hero-meta"><span><b>05</b> мов і технологій</span><i></i><span><b>∞</b> ідей для реалізації</span></div>
-          </div>
-          <div class="col-lg-5">
-            <div class="code-window">
-              <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>about_me.rs</span><span class="window-lock">●</span></div>
-              <div class="code-content">
-                <div class="code-line"><span class="ln">01</span><span><em>struct</em> <strong>Developer</strong> {</span></div>
-                <div class="code-line indent"><span class="ln">02</span><span>name: <b class="code-green">"STuxt"</b>,</span></div>
-                <div class="code-line indent"><span class="ln">03</span><span>focus: <b class="code-green">"building things"</b>,</span></div>
-                <div class="code-line indent"><span class="ln">04</span><span>coffee: <b class="code-purple">true</b>,</span></div>
-                <div class="code-line"><span class="ln">05</span><span>}</span></div>
-                <div class="code-gap"></div>
-                <div class="code-line"><span class="ln">06</span><span><em>impl</em> Developer {</span></div>
-                <div class="code-line indent"><span class="ln">07</span><span><em>fn</em> <strong>build</strong>(&amp;self) {</span></div>
-                <div class="code-line indent2"><span class="ln">08</span><span><b class="code-blue">println!</b>(<b class="code-green">"Let's create!"</b>);</span></div>
-                <div class="code-line indent"><span class="ln">09</span><span>}</span></div>
-                <div class="code-line"><span class="ln">10</span><span>}</span></div>
-                <div class="terminal-line"><span class="terminal-prompt">➜</span> cargo run <span class="cursor"></span></div>
-                <div class="terminal-output">Finished <b>dev</b> profile · 0 errors</div>
-              </div>
-              <div class="code-footer"><span><i class="footer-dot"></i> All systems operational</span><span>UTF-8&nbsp; · &nbsp;Rust</span></div>
-            </div>
-            <div class="floating-tag tag-top">{ } <span>clean code</span></div>
-            <div class="floating-tag tag-bottom"><span class="tag-spark">✳</span> made with curiosity</div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-grid"></div>
-    </section>
-
-    <section class="about section-space" id="about">
-      <div class="container">
-        <div class="section-heading"><p class="eyebrow">01 / ABOUT</p><h2>Трохи <span class="gradient-text">контексту.</span></h2></div>
-        <div class="row gy-4 align-items-start">
-          <div class="col-lg-7"><p class="about-lead">Мені цікаво не просто використовувати технології — хочу розуміти, як вони працюють зсередини.</p><p class="muted-copy">Пишу на різних мовах програмування, експериментую з низькорівневими речами, розробляю ігрові механіки та вебінтерфейси. Люблю знаходити елегантні рішення складних задач і перетворювати ідеї на робочий код.</p></div>
-          <div class="col-lg-5"><div class="info-card"><div class="info-row"><span class="info-icon">⌘</span><div><small>НАПРЯМ</small><b>Software Development</b></div></div><div class="info-row"><span class="info-icon">⌁</span><div><small>ЦІКАВЛЮСЯ</small><b>Systems · GameDev · Web</b></div></div><div class="info-row"><span class="info-icon">⌖</span><div><small>ПІДХІД</small><b>Learn · Build · Improve</b></div></div></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills section-space" id="skills">
-      <div class="container">
-        <div class="section-heading"><p class="eyebrow">02 / TOOLKIT</p><h2>Мій <span class="gradient-text">інструментарій.</span></h2><p class="muted-copy">Технології, з якими я працюю та експериментую.</p></div>
-        <div class="row g-3 skills-grid">
-          <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span class="skill-symbol python">Py</span><h3>Python</h3><p>Automation · Scripting</p></div></div>
-          <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span class="skill-symbol cpp">C++</span><h3>C / C++</h3><p>Systems · Performance</p></div></div>
-          <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span class="skill-symbol rust">⚙</span><h3>Rust</h3><p>Safe · Efficient code</p></div></div>
-          <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span class="skill-symbol bevy">✦</span><h3>Bevy Engine</h3><p>Game development</p></div></div>
-          <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span class="skill-symbol html">5</span><h3>HTML</h3><p>Semantic markup</p></div></div>
-          <div class="col-6 col-md-4 col-lg-3"><div class="skill-card"><span class="skill-symbol css">#</span><h3>CSS</h3><p>Responsive interfaces</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects section-space" id="projects">
-      <div class="container">
-        <div class="section-heading"><p class="eyebrow">03 / SELECTED WORK</p><h2>Що я <span class="gradient-text">створюю.</span></h2><p class="muted-copy">Кілька напрямів, у яких втілюю свої ідеї.</p></div>
-        <div class="row g-4">
-          <div class="col-lg-6"><article class="project-card"><div class="project-visual visual-game"><div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div><div class="game-cube">✦</div><span class="visual-label">GAME DEVELOPMENT</span></div><div class="project-body"><div class="project-top"><h3>Game worlds & mechanics</h3><span class="project-arrow">↗</span></div><p>Ігрові системи, механіки та експерименти з Bevy Engine і Rust.</p><div class="project-tags"><span>Rust</span><span>Bevy</span><span>GameDev</span></div></div></article></div>
-          <div class="col-lg-6"><article class="project-card"><div class="project-visual visual-systems"><div class="system-lines"><span>01&nbsp; initialize()</span><span>02&nbsp; process_data()</span><span>03&nbsp; optimize()</span><span>04&nbsp; return Ok(())</span></div><span class="visual-label">SYSTEMS & TOOLS</span></div><div class="project-body"><div class="project-top"><h3>Tools & experiments</h3><span class="project-arrow">↗</span></div><p>Невеликі утиліти, автоматизація та дослідження роботи програмного забезпечення.</p><div class="project-tags"><span>Python</span><span>C/C++</span><span>Rust</span></div></div></article></div>
-        </div>
-        <p class="projects-note">Це демонстраційні картки напрямів — тут можна додати посилання на реальні репозиторії.</p>
-      </div>
-    </section>
-
-    <section class="contact section-space" id="contact">
-      <div class="container"><div class="contact-panel"><div class="contact-glow"></div><p class="eyebrow">04 / GET IN TOUCH</p><h2>Є цікава <span class="gradient-text">ідея?</span></h2><p>Відкритий до спілкування, обміну досвідом та цікавих технічних викликів.</p><a class="btn btn-primary-custom" href="mailto:hello@example.com">Написати мені <span>↗</span></a><small class="email-hint">Замініть hello@example.com на свою адресу</small></div></div>
-    </section>
-  </main>
-
-  <footer class="site-footer"><div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"><a class="navbar-brand brand" href="#home"><span class="brand-mark">&lt;/&gt;</span> stuxt<span class="brand-dot">.</span></a><span>Створено з цікавістю до технологій <span class="footer-heart">♥</span></span><span>© <span id="year"></span> STuxt</span></div></footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
