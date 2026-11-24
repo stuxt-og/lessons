@@ -15,3 +15,21 @@ h1, h2, h3, h4, h5, h6 {
 img {
     max-width: 100%;
 }
+
+.border_red {
+    border: 1px solid red;
+}
+
+.wrapper {
+    max-width: 1141px;
+    margin: 0px auto;
+}
+
+.main-section {
+    background-color: #F2F7FF;
+    border-radius: 32px;
+}
+
+.main-section header {
+    margin: 32px 36px;
+}
