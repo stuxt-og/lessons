@@ -16,10 +16,6 @@ img {
     max-width: 100%;
 }
 
-.border_red {
-    border: 1px solid red;
-}
-
 .wrapper {
     max-width: 1141px;
     margin: 0 auto;
@@ -188,10 +184,42 @@ img {
     z-index: 1;
 }
 
-.plus-icon {
+.pluses-orbit {
     position: absolute;
-    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
+    z-index: 2;
+    animation: orbit 30s linear infinite;
+}
+
+.plus-pos {
+    position: absolute;
+    animation: counter-orbit 30s linear infinite;
+}
+
+.plus-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.tilt-15 {
+    transform: rotate(15deg);
+}
+
+.tilt-neg15 {
+    transform: rotate(-15deg);
+}
+
+.tilt-25 {
+    transform: rotate(25deg);
+}
+
+.tilt-neg20 {
+    transform: rotate(-20deg);
 }
 
 .plus-large {
@@ -199,32 +227,45 @@ img {
     height: 88px;
     top: -28px;
     left: 100px;
-    position: absolute;
 }
 
 .plus-medium {
-    position: absolute;
     width: 44px;
     top: 48%;
     left: 25px;
 }
 
 .plus-small-1 {
-    position: absolute;
     width: 27px;
     top: 24%;
     right: 14%;
 }
 
 .plus-small-2 {
-    position: absolute;
     width: 27px;
     height: 27px;
     bottom: 2%;
     right: 25%;
 }
 
-/* ================= RESPONSIVE ================= */
+@keyframes orbit {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes counter-orbit {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
 @media (max-width: 900px) {
     .hero-title {
         font-size: 42px;
@@ -263,11 +304,10 @@ img {
         order: -1;
     }
 
-    /* Зменшуємо плюсики на мобільних */
     .plus-large {
         width: 60px;
         height: 60px;
-        top: -10%;
+        top: -20px;
         left: 10%;
     }
     
@@ -277,7 +317,7 @@ img {
         left: -4%;
     }
     
-    .plus-small-1, .plus-small-2, .plus-small-3 {
+    .plus-small-1, .plus-small-2 {
         width: 20px;
         height: 20px;
     }
