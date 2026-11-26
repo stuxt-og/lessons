@@ -101,15 +101,76 @@ img {
 }
 
 .hero {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 40px;
     padding: 40px 36px 80px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-subtitle {
+    color: #12B3A8;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Sora", sans-serif;
+    margin-bottom: 16px;
+}
+
+.hero-title {
+    font-size: 52px;
+    line-height: 1.15;
+    color: #0B1B32;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+    max-width: 500px;
+}
+
+.hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #8296B9;
+    margin-bottom: 36px;
+    max-width: 90%;
+}
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 56px;
+    padding: 0 32px;
+    border-radius: 30px;
+    background: linear-gradient(110deg, #398BFA, #575FF7);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(65, 104, 245, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-button img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.hero-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(65, 104, 245, 0.35);
 }
 
 .hero-image {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -163,6 +224,13 @@ img {
     right: 25%;
 }
 
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .hero-title {
+        font-size: 42px;
+    }
+}
+
 @media (max-width: 768px) {
     .main-section {
         margin-top: 60px;
@@ -172,9 +240,30 @@ img {
     }
 
     .hero {
+        grid-template-columns: 1fr;
         padding: 30px 20px 60px;
+        text-align: center;
+        gap: 30px;
     }
 
+    .hero-content {
+        align-items: center;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        justify-content: center;
+        order: -1;
+    }
+
+    /* Зменшуємо плюсики на мобільних */
     .plus-large {
         width: 60px;
         height: 60px;
@@ -188,7 +277,7 @@ img {
         left: -4%;
     }
     
-    .plus-small-1, .plus-small-2 {
+    .plus-small-1, .plus-small-2, .plus-small-3 {
         width: 20px;
         height: 20px;
     }
@@ -228,5 +317,14 @@ img {
 
     .header-nav a {
         font-size: 10px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-button {
+        width: 100%;
+        padding: 0 20px;
     }
 }
